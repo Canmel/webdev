@@ -26,7 +26,7 @@ export class ModalComponent implements OnInit {
 
   render() {
     $('#' + this.selector + 'Content').html($('#' + this.content).html());
-    // $('#' + this.selector).modal('show');
+    $('#' + this.selector).modal('show');
   }
 
   closedCallback() {

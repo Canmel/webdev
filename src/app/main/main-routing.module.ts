@@ -26,6 +26,9 @@ const mainRoutes: Routes = [{
   }, {
     path: 'tips',
     loadChildren: 'app/business/tips/tips.module#TipsModule'
+  }, {
+    path: 'validate',
+    loadChildren: 'app/business/validate/validate.module#ValidateModule'
   }]
 }];
 
