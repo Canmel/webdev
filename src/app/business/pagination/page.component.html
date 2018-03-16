@@ -1,0 +1,67 @@
+<section class="wrapper">
+  <div class="row">
+    <div class="panel-body" style="width: 100%;">
+      <div class="col-md-12 w3ls-graph">
+
+        <div class="agileinfo-grap">
+          <div class="agileits-box">
+            <header class="agileits-box-header clearfix">
+              <h3>PAGINATION 分页组件</h3>
+              <div class="toolbar">
+              </div>
+            </header>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="panel-body" style="width: 100%;">
+      <div class="col-lg-6 svg-map-area">
+        <app-pagination [pageSize]="paginationParams.pageSize" [totalNum]="paginationParams.totalCount"
+                        [curPage]="paginationParams.curPage" [totalPage]="paginationParams.totalPage"
+                        (changeCurPage)="getPageData($event)"></app-pagination>
+      </div>
+      <div class="ibox col-lg-6 svg-map-area panel-body">
+        <div class="ibox-title"><h5>Echarts svg 地图扩展</h5></div>
+        <div class="ibox-content">
+          <p>paginationParams</p>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <thead>
+              <tr>
+                <th>名称</th>
+                <th>类型</th>
+                <th>值</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td><code>totalCount</code></td>
+                <td><code>integer</code></td>
+                <td>被分页对象总数</td>
+              </tr>
+              <tr>
+                <td><code>pageSize</code></td>
+                <td><code>integer</code></td>
+                <td>每页数量</td>
+              </tr>
+              <tr>
+                <td><code>curPage</code></td>
+                <td><code>integer</code></td>
+                <td>当前页码</td>
+              </tr>
+              <tr>
+                <td><code>totalPage</code></td>
+                <td><code>integer</code></td>
+                <td>总页数</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

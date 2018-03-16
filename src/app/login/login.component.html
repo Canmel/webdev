@@ -1,0 +1,19 @@
+<div class="log-w3">
+  <div class="w3layouts-main">
+    <h2>登录</h2>
+    <form action="http://192.168.2.197:8060/auth/login" id="login-form" method="post">
+      <input type="email" class="ggg" name="username" placeholder="请输入邮箱" value="user" required="true">
+      <input type="password" class="ggg" name="password" placeholder="请输入密码" value="123456" required="true">
+      <div>
+        <input type="text" class="ggg80" name="imageCode" placeholder="请输入验证码" required="true">
+        <div style="display: inline-block; width: 16%">
+          <app-image-code></app-image-code>
+        </div>
+      </div>
+      <span><input type="checkbox" name="remember-me"/>记住我</span>
+      <h6><a href="#">忘记密码?</a></h6>
+      <div class="clearfix"></div>
+      <input type="submit" value="登录" name="login" (click)="doLogin()">
+    </form>
+  </div>
+</div>

@@ -1,0 +1,219 @@
+<section class="wrapper">
+  <div class="row">
+    <div class="panel-body" style="width: 100%;">
+      <div class="col-md-12 w3ls-graph">
+
+        <div class="agileinfo-grap">
+          <div class="agileits-box">
+            <header class="agileits-box-header clearfix">
+              <h3>Funsionchart 复合图表-柱状|折现|区域</h3>
+              <div class="toolbar">
+              </div>
+            </header>
+            <div class="agileits-box-body clearfix">
+              <div id="hero-area"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="panel-body" style="width: 100%;">
+      <div class="col-lg-6 svg-map-area">
+        <fusioncharts
+          [id]="funsionchartCompositeOption.id"
+          [width]="funsionchartCompositeOption.width"
+          [height]="funsionchartCompositeOption.height"
+          [type]="funsionchartCompositeOption.type"
+          [dataFormat]="funsionchartCompositeOption.dataFormat"
+          [dataSource]="funsionchartCompositeOption.dataSource"
+        ></fusioncharts>
+      </div>
+      <div class="ibox col-lg-6 svg-map-area">
+        <div class="ibox-title"><h5>Echarts svg 地图扩展</h5></div>
+        <div class="ibox-content">
+          <p>option参数。具体调用信息：<code>ttps://www.fusijuoncharts/</code></p>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <thead>
+              <tr>
+                <th>名称</th>
+                <th>类型</th>
+                <th>值</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td><code>id</code></td>
+                <td><code>string</code></td>
+                <td>按自带规则命名</td>
+              </tr>
+              <tr>
+                <td><code>width, height</code></td>
+                <td><code>string</code></td>
+                <td>纯数字表示像素单位，百分比使用 '90%'</td>
+              </tr>
+              <tr>
+                <td><code>type</code></td>
+                <td><code>string</code></td>
+                <td>不同类型对应的表在官网查找</td>
+              </tr>
+              <tr>
+                <td><code>dataFormat</code></td>
+                <td><code>string</code></td>
+                <td><code>json, jsonurl, csv, xml, xmlurl</code></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="panel-body" style="width: 100%;">
+      <div class="col-md-12 w3ls-graph">
+
+        <div class="agileinfo-grap">
+          <div class="agileits-box">
+            <header class="agileits-box-header clearfix">
+              <h3>Funsionchart 单一图表-柱状图</h3>
+              <div class="toolbar">
+              </div>
+            </header>
+            <div class="agileits-box-body clearfix">
+              <div id="hero-area"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="panel-body" style="width: 100%;">
+      <div class="col-lg-6 svg-map-area">
+        <fusioncharts
+          [id]="funsionchartHistogramOption.id"
+          [width]="funsionchartHistogramOption.width"
+          [height]="funsionchartHistogramOption.height"
+          [type]="funsionchartHistogramOption.type"
+          [dataFormat]="funsionchartHistogramOption.dataFormat"
+          [dataSource]="funsionchartHistogramOption.dataSource"
+        ></fusioncharts>
+      </div>
+      <div class="ibox col-lg-6 svg-map-area">
+        <div class="ibox-title"><h5>Echarts svg 地图扩展</h5></div>
+        <div class="ibox-content">
+          <p>option参数。具体调用信息：<code>ttps://www.fusijuoncharts/</code></p>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <thead>
+              <tr>
+                <th>名称</th>
+                <th>类型</th>
+                <th>值</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td><code>id</code></td>
+                <td><code>string</code></td>
+                <td>按自带规则命名</td>
+              </tr>
+              <tr>
+                <td><code>width, height</code></td>
+                <td><code>string</code></td>
+                <td>纯数字表示像素单位，百分比使用 '90%'</td>
+              </tr>
+              <tr>
+                <td><code>type</code></td>
+                <td><code>string</code></td>
+                <td>不同类型对应的表在官网查找</td>
+              </tr>
+              <tr>
+                <td><code>dataFormat</code></td>
+                <td><code>string</code></td>
+                <td><code>json, jsonurl, csv, xml, xmlurl</code></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="panel-body" style="width: 100%;">
+      <div class="col-md-12 w3ls-graph">
+
+        <div class="agileinfo-grap">
+          <div class="agileits-box">
+            <header class="agileits-box-header clearfix">
+              <h3>ECharts SVG 地图拓展</h3>
+              <div class="toolbar">
+              </div>
+            </header>
+            <div class="agileits-box-body clearfix">
+              <div id="hero-area"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="panel-body" style="width: 100%;">
+      <div class="col-lg-6 svg-map-area">
+        <app-svg-map [option]="option" [divClass]="divClass" [svg]="svgRoute" [selector]="echartMapArea"
+                     (clickCallBack)="mapClickCallBack($event)"></app-svg-map>
+      </div>
+      <div class="ibox col-lg-6 svg-map-area">
+        <div class="ibox-title"><h5>Echarts svg 地图扩展</h5></div>
+        <div class="ibox-content">
+          <p>地图调用参数，其中<code>option</code>详情参见官网</p>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <thead>
+              <tr>
+                <th>名称</th>
+                <th>类型</th>
+                <th>默认值</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td><code>option</code></td>
+                <td><code>object</code></td>
+                <td>地图参数</td>
+              </tr>
+              <tr>
+                <td><code>divClass</code></td>
+                <td><code>string</code></td>
+                <td>class,但不能定义宽高</td>
+              </tr>
+              <tr>
+                <td><code>svgRoute</code></td>
+                <td><code>string</code></td>
+                <td>svg保存路径</td>
+              </tr>
+              <tr>
+                <td><code>selector</code></td>
+                <td><code>string</code></td>
+                <td>dom节点的ID属性</td>
+              </tr>
+              <tr>
+                <td><code>clickCallBack</code></td>
+                <td><code>function</code></td>
+                <td>点击事件回调</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

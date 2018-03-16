@@ -1,0 +1,313 @@
+<section class="wrapper">
+  <div class="row">
+    <div class="panel-body">
+      <div class="col-md-12 w3ls-graph">
+        <div class="agileinfo-grap">
+          <div class="agileits-box">
+            <header class="agileits-box-header clearfix">
+              <h3>COASTR 提示信息</h3>
+            </header>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="agil-info-calendar">
+    <div class="col-md-3 agile-calendar">
+      <div class="calendar-widget">
+        <div class="ibox-content">
+          <button tabindex="-1" class="btn btn-info" (click)='infoTips()' type="button">提示信息</button>
+          <br/>
+          <hr/>
+          <button tabindex="-1" class="btn btn-success" (click)='successTips()' type="button">提示成功</button>
+          <br/>
+          <hr/>
+          <button tabindex="-1" class="btn btn-danger" (click)='dangerTips()' type="button">提供失败</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9 w3agile-notifications">
+      <div class="notifications">
+        <div class="ibox-title"><h5>使用COASTR提示信息</h5></div>
+        <div class="ibox-content">
+          <p><code>initScript</code>中定义了提示方法，可以直接使用</p>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <thead>
+              <tr>
+                <th>名称</th>
+                <th>参数类型</th>
+                <th>值</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td><code>initScript.infoMsg(title, msg)</code></td>
+                <td><code>string， string</code></td>
+                <td>title: 标题, msg: 提示信息</td>
+              </tr>
+              <tr>
+                <td><code>initScript.successMsg(title, msg)</code></td>
+                <td><code>string， string</code></td>
+                <td>title: 标题, msg: 提示信息</td>
+              </tr>
+              <tr>
+                <td><code>initScript.errorMsg(title, msg)</code></td>
+                <td><code>string， string</code></td>
+                <td>title: 标题, msg: 提示信息</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  <div class="row">
+    <div class="panel-body">
+      <div class="col-md-12 w3ls-graph">
+        <div class="agileinfo-grap">
+          <div class="agileits-box">
+            <header class="agileits-box-header clearfix">
+              <h3>BOOTSTRAP MADAL 模态框</h3>
+            </header>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="agil-info-calendar">
+    <div class="col-md-3 agile-calendar">
+      <div class="calendar-widget">
+        <div class="ibox-content">
+          <app-modal [selector]="modalOptions.selector"
+                     [title]="modalOptions.title"
+                     [content]="modalOptions.content"
+                     [characters]="modalOptions.characters"
+                     (commit)="modalCommit($event)"
+                     (closed)="modalClosed($event)"></app-modal>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9 w3agile-notifications">
+      <div class="notifications">
+        <div class="ibox-title"><h5>使用COASTR提示信息</h5></div>
+        <div class="ibox-content">
+          <p><code>initScript</code>中定义了提示方法，可以直接使用</p>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <thead>
+              <tr>
+                <th>名称</th>
+                <th>参数类型</th>
+                <th>值</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td><code>initScript.infoMsg(title, msg)</code></td>
+                <td><code>string， string</code></td>
+                <td>title: 标题, msg: 提示信息</td>
+              </tr>
+              <tr>
+                <td><code>initScript.successMsg(title, msg)</code></td>
+                <td><code>string， string</code></td>
+                <td>title: 标题, msg: 提示信息</td>
+              </tr>
+              <tr>
+                <td><code>initScript.errorMsg(title, msg)</code></td>
+                <td><code>string， string</code></td>
+                <td>title: 标题, msg: 提示信息</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+
+  <div class="agil-info-calendar">
+    <div class="col-md-3 agile-calendar">
+      <div class="calendar-widget">
+        <div class="ibox-content">
+          <app-modal [selector]="htmlModalOptions.selector"
+                     [title]="htmlModalOptions.title"
+                     [content]="htmlModalOptions.content"
+                     [characters]="htmlModalOptions.characters"
+                     (commit)="modalCommit($event)"
+                     (closed)="modalClosed($event)"></app-modal>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9 w3agile-notifications">
+      <div class="notifications">
+        <div class="ibox-title"><h5>使用COASTR提示信息</h5></div>
+        <div class="ibox-content">
+          <p><code>initScript</code>中定义了提示方法，可以直接使用</p>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <thead>
+              <tr>
+                <th>名称</th>
+                <th>参数类型</th>
+                <th>值</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td><code>initScript.infoMsg(title, msg)</code></td>
+                <td><code>string， string</code></td>
+                <td>title: 标题, msg: 提示信息</td>
+              </tr>
+              <tr>
+                <td><code>initScript.successMsg(title, msg)</code></td>
+                <td><code>string， string</code></td>
+                <td>title: 标题, msg: 提示信息</td>
+              </tr>
+              <tr>
+                <td><code>initScript.errorMsg(title, msg)</code></td>
+                <td><code>string， string</code></td>
+                <td>title: 标题, msg: 提示信息</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+
+
+
+  <div class="row tip-area">
+    <div class="panel-body tip-area" style="width: 100%;">
+      <div class="ibox col-lg-3 tip-area">
+
+      </div>
+      <div class="ibox col-lg-9 tip-area">
+        <div class="ibox-title"><h5>使用COASTR提示信息</h5></div>
+        <div class="ibox-content">
+          <p><code>initScript</code>中定义了提示方法，可以直接使用</p>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <thead>
+              <tr>
+                <th>名称</th>
+                <th>参数类型</th>
+                <th>值</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td><code>initScript.infoMsg(title, msg)</code></td>
+                <td><code>string， string</code></td>
+                <td>title: 标题, msg: 提示信息</td>
+              </tr>
+              <tr>
+                <td><code>initScript.successMsg(title, msg)</code></td>
+                <td><code>string， string</code></td>
+                <td>title: 标题, msg: 提示信息</td>
+              </tr>
+              <tr>
+                <td><code>initScript.errorMsg(title, msg)</code></td>
+                <td><code>string， string</code></td>
+                <td>title: 标题, msg: 提示信息</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row tip-area">
+    <div class="panel-body tip-area" style="width: 100%;">
+      <div class="ibox col-lg-3 tip-area">
+        <div class="ibox-content">
+          <app-modal [selector]="htmlModalOptions.selector"
+                     [title]="htmlModalOptions.title"
+                     [content]="htmlModalOptions.content"
+                     [characters]="htmlModalOptions.characters"
+                     (commit)="modalCommit($event)"
+                     (closed)="modalClosed($event)"></app-modal>
+        </div>
+      </div>
+      <div class="ibox col-lg-9 tip-area">
+        <div class="ibox-title"><h5>使用COASTR提示信息</h5></div>
+        <div class="ibox-content">
+          <p><code>initScript</code>中定义了提示方法，可以直接使用</p>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <thead>
+              <tr>
+                <th>名称</th>
+                <th>参数类型</th>
+                <th>值</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td><code>initScript.infoMsg(title, msg)</code></td>
+                <td><code>string， string</code></td>
+                <td>title: 标题, msg: 提示信息</td>
+              </tr>
+              <tr>
+                <td><code>initScript.successMsg(title, msg)</code></td>
+                <td><code>string， string</code></td>
+                <td>title: 标题, msg: 提示信息</td>
+              </tr>
+              <tr>
+                <td><code>initScript.errorMsg(title, msg)</code></td>
+                <td><code>string， string</code></td>
+                <td>title: 标题, msg: 提示信息</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+<div id="modalContent" style="display: none;">
+  模态框content
+</div>
+
+<div id="htmlContent" style="display: none;">
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead>
+      <tr>
+        <th>名称</th>
+        <th>参数类型</th>
+        <th>值</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><code>initScript.infoMsg(title, msg)</code></td>
+        <td><code>string， string</code></td>
+        <td>title: 标题, msg: 提示信息</td>
+      </tr>
+      <tr>
+        <td><code>initScript.successMsg(title, msg)</code></td>
+        <td><code>string， string</code></td>
+        <td>title: 标题, msg: 提示信息</td>
+      </tr>
+      <tr>
+        <td><code>initScript.errorMsg(title, msg)</code></td>
+        <td><code>string， string</code></td>
+        <td>title: 标题, msg: 提示信息</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

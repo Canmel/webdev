@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+
+.ibox {
+  margin-bottom: 20px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.ibox.collapsed .ibox-content {
+  display: none;
+}
+
+.ibox.collapsed .fa.fa-chevron-up:before {
+  content: "\f078";
+}
+
+.ibox.collapsed .fa.fa-chevron-down:before {
+  content: "\f077";
+}
+
+.ibox:after,
+.ibox:before {
+  display: table;
+}
+
+.ibox-title {
+  height: 41px;
+  border-color: #edf1f2;
+  background-color: #f6f8f8;
+  color: #333;
+  font-weight: 700;
+  border-radius: 2px 2px 0 0;
+  padding: 15px 15px 3px 15px;
+  border-bottom: 1px solid transparent;
+  display: block;
+  clear: both;
+}
+
+.ibox-content {
+  background-color: #ffffff;
+  color: inherit;
+  padding: 15px 20px 20px 20px;
+  border-color: #e7eaec;
+  -webkit-border-image: none;
+  -o-border-image: none;
+  border-image: none;
+  border-style: solid solid none;
+  border-width: 1px 0px;
+}
